@@ -17,5 +17,5 @@ mkdir ~/.themes
 mv xfce-dots/border-only-wm-theme/ ~/.themes/border-only
 ```
 
--Open the "Window Manager" application.
--Under the "Style" tab, select the "border-only" option
+- Open the "Window Manager" application.
+- Under the "Style" tab, select the "border-only" option
