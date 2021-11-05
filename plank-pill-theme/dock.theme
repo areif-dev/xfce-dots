@@ -47,7 +47,7 @@ ActiveTime=475
 #The amount of time (in ms) to slide icons into/out of the dock.
 SlideTime=500
 #The time (in ms) to fade the dock in/out on a hide (if FadeOpacity is < 1).
-FadeTime=100
+FadeTime=750
 #The time (in ms) to slide the dock in/out on a hide (if FadeOpacity is 1).
 HideTime=100
 #The size of the urgent glow (shown when dock is hidden), in tenths of a percent of IconSize.
