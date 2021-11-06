@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Before running this script, it may be necessary to run 
-# `systemd start NetworkManager.service` and use `nmtui` to connect to a host
+# `systemctl start NetworkManager.service` and use `nmtui` to connect to a host
 
 # Sync packages
 sudo pacman -Syu
