@@ -47,9 +47,11 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-" Ramap moving between splits to ctr+h/l
+" Ramap moving between splits to ctr+h/l/j/k
 noremap <C-l> :wincmd l<CR>
 noremap <C-h> :wincmd h<CR> 
+noremap <C-j> :wincmd j<CR>
+noremap <C-k> :wincmd k<CR>
 
 " Do not wrap overflow lines
 set nowrap
