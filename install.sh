@@ -7,7 +7,7 @@
 sudo pacman -Syu
 
 # Install new packages and remove undesirable ones
-sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty
+sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty zsh
 sudo pacman -R xfce4-taskmanager
 
 # Clone the configuration directories from github
@@ -31,4 +31,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir ~/.config/nvim/
 mv ~/xfce-dots/nvim/init.vim ~/.config/nvim/init.vim
 
+# Configure Alacritty
+mkdir ~/.config/alacritty
+mv ~/alacritty/alacritty.yml ~/.config/alacritty
+
+#Configure zsh
+chsh -s /usr/bin/zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
