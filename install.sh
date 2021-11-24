@@ -33,9 +33,11 @@ mv ~/xfce-dots/nvim/init.vim ~/.config/nvim/init.vim
 
 # Configure Alacritty
 mkdir ~/.config/alacritty
-mv ~/alacritty/alacritty.yml ~/.config/alacritty
+mv ~/xfce-dots/alacritty/alacritty.yml ~/.config/alacritty
 
 #Configure zsh
 chsh -s /usr/bin/zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+mv ~/xfce-dots/zsh/.zshrc ~
 
