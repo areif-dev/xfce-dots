@@ -7,7 +7,7 @@
 sudo pacman -Syu
 
 # Install new packages and remove undesirable ones
-sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty zsh
+sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty zsh kdeconnect
 sudo pacman -R xfce4-taskmanager
 
 # Clone the configuration directories from github
