@@ -7,7 +7,7 @@
 sudo pacman -Syu
 
 # Install new packages and remove undesirable ones
-sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty zsh kdeconnect
+sudo pacman -S firefox neovim git zip unzip papirus-icon-theme gimp python-pip alacritty zsh kdeconnect rofi
 sudo pacman -R xfce4-taskmanager
 
 # Clone the configuration directories from github
@@ -35,9 +35,12 @@ mv ~/xfce-dots/nvim/init.vim ~/.config/nvim/init.vim
 mkdir ~/.config/alacritty
 mv ~/xfce-dots/alacritty/alacritty.yml ~/.config/alacritty
 
-#Configure zsh
+# Configure zsh
 chsh -s /usr/bin/zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 mv ~/xfce-dots/zsh/.zshrc ~
 
+# Configure rofi
+mkdir ~/.config/rofi
+mv ~/xfce-dots/rofi/config.rasi ~/.config/rofi
